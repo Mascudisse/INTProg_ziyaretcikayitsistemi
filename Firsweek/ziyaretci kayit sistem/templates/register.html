@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0e2941, #0e2941);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 450px;
+    background-image: url(/templates/i\ \(1\).webp);
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: auto;
+    margin: auto;
+  
+}
+
+.register-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+   /* background: linear-gradient(90deg, #3498db, #2ecc71);*/     /* bunu once yaptim sonra vazgectim o yuzden arka plan bir reim olarak kullandim  */
+}
+
+.register-container h2 {
+    color: #234666;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.register-container .input-group {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.register-container .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.register-container .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background: #f9f9f9;
+}
+
+.register-container .input-group input:focus {
+    border-color: #3498db;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.register-container .input-group i {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    color: #999;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #234666, #0e2941);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-container button:hover {
+    background: linear-gradient(90deg, #0e2941, #234666);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.register-container .login-link {
+    margin-top: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.register-container .login-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-container .login-link a:hover {
+    text-decoration: underline;
+}
+
+.password-strength {
+    margin-top: 5px;
+    height: 4px;
+    background: #eee;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-meter {
+    height: 100%;
+    width: 0;
+    background: #e74c3c;
+    transition: all 0.3s;
+}
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2><i></i>Hesap oluştur</h2>
+        
+        <form class="register-form" method="POST">
+            <div class="input-group">
+                <label for="fullname">Ad</label>
+                <input type="text" id="fullname" placeholder="adiniz" required>
+                <i class="fas fa-user"></i>
+            </div>
+            
+            <div class="input-group">
+                <label for="surname">Soyad</label>
+                <input type="text" id="surname" placeholder="soyad" required>
+                <i class="fas fa-user"></i>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">E-post Adres</label>
+                <input type="email" id="email" placeholder="email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Şifre</label>
+                <input type="password" id="password" placeholder="şifre oluştur" required>
+                <i class="fas fa-lock"></i>
+               
+            </div>
+            
+            <div class="input-group">
+                <label for="confirm-password">Şifre tekrara</label>
+                <input type="password" id="confirm-password" placeholder="şifre tekrar girin" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="input-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="fa-phone" name="phone" placeholder="Telefon girin" required>
+                <i class="fas fa-phone"></i>
+            </div>
+            
+            <button type="submit">HESAP OLUŞTUR</button>
+            
+            <div class="login-link">
+                zaten bir hesabınız var mı? <a href="{{ url_for('login') }}">oturum aç</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+ 
+</body>
+</html>

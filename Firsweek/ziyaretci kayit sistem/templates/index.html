@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <!-------ANASAYFA------->
+    <section id="Anasayfa">
+        <div class="inner_anasayfa">
+            <div class="child_anasayfa">
+                <h1>Ziyaretci Uygulamasına Hoş Geldiniz ?? <br><span class="span_child"> NE BEKLIYORSUN </span></h1>
+                <p>Ziyaretçi Kayıt Sistemi ile gelen misafirlerinizi kolayca kaydedin, yönetin ve raporlayın.  
+                    Güvenli ve pratik bir deneyim sizi bekliyor. </p>
+                <a href="{{ url_for('register') }}"><button class="btn">Hemen Başla</button></a>
+                
+            </div>
+            <div class="child_anasayfa">
+                <div class="d-flex gap-3">
+                    <a href="{{ url_for('login') }}" class="btn btn-primary btn-custom">Giriş Yap</a>
+                    <a href="{{ url_for('register') }}" class="btn btn-outline-secondary btn-custom">Kayıt Ol</a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kartlar">
+        <div class="section_title">
+            <h2>Ziyaretçi Paneli Bileşenleri</h2>
+        </div>
+        <div class="innersoftware">
+            <div class="innersoftware_child">
+                <div class="icon">
+                    <i class="fa fa-solid fa-address-card"></i>
+                </div>
+                <h3>ZİYARETÇİ KAYDI</h3>
+                <P>Ziyaretçi Bilgileri
+                    Ziyaretçilerin ad, soyad ve geliş sebebi gibi bilgileri güvenli şekilde sisteme kaydedebilirsiniz.</P>
+            </div>
+            <div class="innersoftware_child">
+                <div class="icon">
+                    <i class="fa fa-user-plus"></i>
+                </div>
+                <h3>ZİYARETÇİ TAKİBİ</h3>
+                <P>Ziyaretçi Takibi
+                    Gelen ve giden ziyaretçilerin giriş-çıkış saatlerini kolayca izleyin, geçmişe dönük kayıtları görüntüleyin.
+                    
+                    </P>
+            </div>
+            <div class="innersoftware_child">
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <h3>RAPORLAMA</h3>
+                <P>İstatistik ve Raporlama
+                    Ziyaretçi yoğunluklarını grafiklerle analiz edin, günlük/haftalık/aylık raporlar oluşturun.
+                    
+                    </P>
+            </div>
+        </div>
+    </section>
+
+    <!-------iLETEŞİM-------->
+    <section id="iletişim">
+        <div class="section_title">
+            <h2>Iletişim Geç</h2>
+        </div>
+        <div class="inner_contact">
+            <div class="child_contact">
+                <img src="{{ url_for('static', filename='img/contact us.jpg') }}" alt="İletişim Resmi">
+            </div>
+            <div class="child_contact">
+                <form action="#">
+                    <input type="text" name="firstname" id="" placeholder="ad">
+                    <input type="text" name="surname" id="" placeholder="soyad">
+                    <input type="email" name="email" id="" placeholder="email@gmail.com">
+                    <textarea name="mesaj" id="" placeholder="mesaj" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+        </div>   
+    </section>
+
+{% endblock %}
+

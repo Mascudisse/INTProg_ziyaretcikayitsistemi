@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziyaretçi Sistemi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h2><a href="{{ url_for('index') }}">VisitorLog  Þ©</a></h2>
+        </div>
+        <ul class="nav_links">
+            <li><a href="{{ url_for('index') }}">Anasayfa</a></li>
+            <li><a href="{{ url_for('ziyaretci_ekle') }}">Ziyaretçi Ekle</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('hakkimizda') }}">hakkimizda</a></li>
+            <li><a href="{{ url_for('register') }}">SIGN UP</a></li>
+            <li><a href="#iletişim">İletişim</a></li>
+        </ul>
+    </div>
+</header>
+{% block content %}
+{% endblock  %}
+    
+    <!------FOOTER------->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>VisitorLog ©</h3>
+                <p>Ziyaretçi yönetim sisteminiz için profesyonel çözüm</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Anasayfa</a></li>
+                    <li><a href="{{ url_for('ziyaretci_ekle') }}">Ziyaretçi Ekle</a></li>
+                    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                    <li><a href="{{ url_for('login') }}">Giriş Yap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p><i class="fa fa-map-marker"></i> 1234 Cadde, İstanbul, Türkiye</p>
+                <p><i class="fa fa-phone"></i> +90 555 123 45 67</p>
+                <p><i class="fa fa-envelope"></i> info@visitorlog.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 VisitorLog. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
