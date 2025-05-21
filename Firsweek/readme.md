@@ -1,6 +1,6 @@
 ## internet programciligi ders flask ders
 
-first week 
+##first week 
 Bu proje, ziyaretci kayit sistem  uygulaması için tasarlanmış bir web arayüzüdür.
 
 
@@ -21,6 +21,18 @@ Bu proje, ziyaretci kayit sistem  uygulaması için tasarlanmış bir web arayü
 - Bootstrap 5
 - Bootstrap Icons
 - Jinja2 Template Engine
+
+
+Responsive Tasarım
+    Mobil cihazlara uyumlu
+    Tablet ve masaüstü için optimize edilmiş görünüm
+    Grid sistemi ile esnek yerleşim
+
+  Kartlar
+     Gölgeli tasarım
+     Hover efektleri
+     İkon entegrasyonu
+     Badge'ler ile kategori gösterimi
 
 
 ## Proje Yapısı
