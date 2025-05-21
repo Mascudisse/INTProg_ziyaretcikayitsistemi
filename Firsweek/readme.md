@@ -52,8 +52,3 @@ FirstWeek/
 
 
 
-### Responsive Tasarım
-- Mobil cihazlara uyumlu
-- Tablet ve masaüstü için optimize edilmiş görünüm
-- Grid sistemi ile esnek yerleşim
-
