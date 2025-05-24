@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2><i></i>Hesap oluştur</h2>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      
+      
+        <form class="register-form" method="POST" action="{{ url_for('register') }}">
+            <div class="input-group">
+                <label for="name">Ad soyad</label>
+                <input type="text" id="name" name="name" placeholder="adiniz ve soyadiniz girin " required>
+                <i class="fas fa-user"></i>
+            </div>
+            
+            
+            <div class="input-group">
+                <label for="email">E-post Adres</label>
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Şifre</label>
+                <input type="password" id="password" name="password" placeholder="şifre oluştur" required>
+                
+               
+            </div>
+            
+            <div class="input-group">
+                <label for="confirm-password">Şifre tekrara</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="şifre tekrar girin" required>
+
+            </div>
+           
+            
+            <button type="submit">HESAP OLUŞTUR</button>
+            
+            <div class="login-link">
+                zaten bir hesabınız var mı? <a href="{{ url_for('login') }}">oturum aç</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+ 
+</body>
+</html>

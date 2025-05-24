@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/hakkimizda.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!------HEADER------->
+    <header>
+        <div class="navbar">
+           <div class="logo">
+                <h2><a href="#Anasayfa" style="letter-spacing: 9px;"> VisitorLog  ©</a></h2>
+            </div>
+            <ul class="nav_links">
+                <li><a href="{{ url_for('index') }}">Anasayfa</a></li>
+                <li><a href="{{ url_for('ziyaretci_ekle') }}">Ziyaretçi elke</a></li>
+                <li><a href="{{ url_for('dashboard') }}">dashboard</a></li>
+                <li><a href="{{ url_for('login') }}"> Hakkimizda</a></li>
+                <li><a href="{{ url_for('register') }}">SIGN UP</a></li>
+                <li><a href="#iletişim">iletişim</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <div class="container">
+            <h1>Hakkımızda</h1>
+            <p>Ziyaretçi yönetiminde lider çözümler sunan ekibimiz ve değerlerimizle tanışın</p>
+        </div>
+    </section>
+
+    <!-- MİSYON VİZYON -->
+    <section class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Değerlerimiz</span>
+            <h2 class="section-title">Neye İnanıyoruz?</h2>
+        </div>
+        
+        <div class="mission-cards">
+            <div class="mission-card">
+                <div class="card-icon">
+                    <i class="fas fa-binoculars"></i>
+                </div>
+                <h3>Vizyonumuz</h3>
+                <p>Ziyaretçi yönetiminde dijital dönüşümün öncüsü olarak, güvenlik ve verimlilikte yeni standartlar belirlemek.</p>
+            </div>
+            
+            <div class="mission-card">
+                <div class="card-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Değerlerimiz</h3>
+                <ul class="values-list">
+                    <li><i class="fas fa-check"></i> Müşteri memnuniyeti</li>
+                    <li><i class="fas fa-check"></i> Yenilikçi yaklaşım</li>
+                    <li><i class="fas fa-check"></i> Şeffaf iletişim</li>
+                    <li><i class="fas fa-check"></i> Veri güvenliği</li>
+                    <li><i class="fas fa-check"></i> Sürekli gelişim</li>
+                </ul>
+            </div>
+            
+            <div class="mission-card">
+                <div class="card-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Misyonumuz</h3>
+                <p>Kurumların ziyaretçi yönetimi ihtiyaçlarına, en güncel teknolojilerle çözümler sunarak güvenli ve verimli bir deneyim sağlamak.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Visitor<span>Log</span></a>
+                    <p>Ziyaretçi yönetiminde profesyonel çözümler sunan lider kuruluş. Güvenliğiniz ve verimliliğiniz için en iyi teknolojileri kullanıyoruz.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>İletişim</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 1234 Teknopark, İstanbul, Türkiye</li>
+                        <li><i class="fas fa-phone"></i> +90 555 123 45 67</li>
+                        <li><i class="fas fa-envelope"></i> info@visitorlog.com</li>
+                        <li><i class="fas fa-clock"></i> Pazartesi - Cuma: 09:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VisitorLog. Tüm hakları saklıdır. | <a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Şartları</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/css/main.js"></script>
+</body>
+</html>

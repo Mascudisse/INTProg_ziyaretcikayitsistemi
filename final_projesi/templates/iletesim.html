@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iletişim</title>
+    <link rel="stylesheet" href="/static/css/iletesim.css">
+</head>
+<body>
+    <section id="iletişim">
+        <div class="section_title">
+            <h2>Iletişim Geç</h2>
+        </div>
+        <div class="inner_contact">
+            <div class="child_contact">
+                <img src="{{ url_for('static', filename='img/contact us.jpg') }}" alt="">
+            </div>
+            <div class="child_contact">
+                <form action="#">
+                    <input type="text" name="firstname" id="" placeholder="isim">
+                    <input type="email" name="surname" id="" placeholder="soyad">
+                    <input type="email" name="email" id="" placeholder="email@gmail.com">
+                    <textarea name="mesaj" id="" placeholder="mesaj" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+
+        </div>   
+    </section>
+
+
+</body>
+</html>

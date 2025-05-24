@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    
+   <div class="logout-btn-container">
+    <a href="{{ url_for('logout') }}" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Çıkış Yap</a>
+</div>
+
+<div class="add-btn-container">
+    <a href="{{ url_for('ziyaretci_ekle') }}" class="btn-add-guest"><i class="fas fa-plus"></i> Yeni Ziyaretçi</a>
+</div>
+
+<div class="container">
+    {% if current_user.is_authenticated %}
+        <h1>Hoşgeldiniz, {{ current_user.name }}</h1>
+    {% endif %}
+</div>
+
+<h1>Ziyaretçi Defteri</h1>
+<div class="cards-container">
+    {% for ziyaretci in ziyaretciler %}
+    <div class="guest-card">
+        <div class="card-header">
+            <h3 class="card-title">{{ ziyaretci.ad }}</h3>
+            <div class="card-date">{{ ziyaretci.tarih.strftime('%d/%m/%Y') }}</div>
+        </div>
+        <div class="card-content">
+            {{ ziyaretci.icerik[:150] }}...
+        </div>
+        <div>
+            <span class="card-tag">{{ ziyaretci.kategori }}</span>
+        </div>
+        <div class="card-actions">
+            <a href="{{ url_for('ziyaretci_duzenle', ziyaretci_id=ziyaretci.id) }}" class="btn btn-edit">
+                <i class="fas fa-edit"></i> Düzenle
+            </a>
+            <form action="{{ url_for('ziyaretci_sil', ziyaretci_id=ziyaretci.id) }}" method="POST" style="display:inline;"onsubmit="return confirmSilme();">
+                <button type="submit" class="btn btn-delete">
+                    <i class="fas fa-trash-alt"></i> Sil
+                </button>
+            </form>
+        </div>
+    </div>
+    {% else %}
+    <p>Henüz bir ziyaretçi kaydınız yok.</p>
+    {% endfor %}
+</div>
+<script>
+    function confirmSilme() {
+        return confirm("Bu kaydi silmek istediğinize emin misiniz?");
+    }
+</script>
+
+</body>
+</html>
