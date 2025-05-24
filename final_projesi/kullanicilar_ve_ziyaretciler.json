@@ -1,0 +1,149 @@
+[
+    {
+        "id": 1,
+        "name": "farhiya",
+        "email": "farhiya@gmail.com",
+        "ziyaretciler": [
+            {
+                "id": 1,
+                "ad": "farhiya hassan ",
+                "tarih": "2025-05-17",
+                "kategori": "Hobi",
+                "icerik": "deneme 34567890"
+            },
+            {
+                "id": 3,
+                "ad": "najah  nur ",
+                "tarih": "2025-05-17",
+                "kategori": "Aile",
+                "icerik": " lorem ?1!!!!!!!"
+            },
+            {
+                "id": 14,
+                "ad": "muscab  nur ",
+                "tarih": "2025-05-22",
+                "kategori": "iş",
+                "icerik": "1234567890poiuytrewasdfghjkl,mnbvcxz"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Mascud",
+        "email": "mascuud@gmail.com",
+        "ziyaretciler": [
+            {
+                "id": 4,
+                "ad": "mascud isse",
+                "tarih": "2025-05-17",
+                "kategori": "Hobi",
+                "icerik": "bugun gezi cok guzeldi ?!!!!!!!!!-------"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "nuradin",
+        "email": "nuradin@gmail.com",
+        "ziyaretciler": [
+            {
+                "id": 5,
+                "ad": "nuradin ahmed ",
+                "tarih": "2025-05-18",
+                "kategori": "Aile",
+                "icerik": "deneme 12 deneme 123"
+            },
+            {
+                "id": 9,
+                "ad": "nuradin osman",
+                "tarih": "2025-05-20",
+                "kategori": "Hobi",
+                "icerik": "sadfghjhre234567890oiuytresdghjkkhgfd"
+            },
+            {
+                "id": 11,
+                "ad": "muscab isse",
+                "tarih": "2025-05-20",
+                "kategori": "Ziyaretçi",
+                "icerik": "deneme123 deneme123 deneme123 deneme123 deneme123 deneme123 deneme123 deneme123"
+            },
+            {
+                "id": 13,
+                "ad": "nuradin ahmed ",
+                "tarih": "2025-05-21",
+                "kategori": "Gezi",
+                "icerik": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "obay",
+        "email": "obay@gmail.com",
+        "ziyaretciler": [
+            {
+                "id": 6,
+                "ad": "obay ibrahim",
+                "tarih": "2025-05-18",
+                "kategori": "Gezi",
+                "icerik": "wuutelhgkwluifotpeiorljgheyftsiporljcgkfdsldfcheskufhgcjfserhgyet;9silurkcgjfely8ru;sgle;5u9psteljfkve5;4tspi9dgj"
+            },
+            {
+                "id": 7,
+                "ad": "obay ",
+                "tarih": "2025-05-18",
+                "kategori": "Ziyaretçi",
+                "icerik": "bugun gezi cok guzeldi !!!!!!!!!!-----------!!!!11"
+            },
+            {
+                "id": 8,
+                "ad": "obay filistinli",
+                "tarih": "2025-05-20",
+                "kategori": "Aile",
+                "icerik": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+            },
+            {
+                "id": 16,
+                "ad": "obay ",
+                "tarih": "2025-05-22",
+                "kategori": "Kişisel",
+                "icerik": "deneme  deneme deneme denemedeneme deneme deneme deneme deneme deneme deneme deneme deneme "
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "geelle",
+        "email": "geelle@gmail.com",
+        "ziyaretciler": [
+            {
+                "id": 12,
+                "ad": "geelle ",
+                "tarih": "2025-05-20",
+                "kategori": "Gezi",
+                "icerik": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "musab",
+        "email": "musab@gmail.com",
+        "ziyaretciler": [
+            {
+                "id": 15,
+                "ad": "muscab isse",
+                "tarih": "2025-05-22",
+                "kategori": "Gezi",
+                "icerik": "bugun ziyaret etigim yerler cok guzeldi !!!   harika "
+            },
+            {
+                "id": 17,
+                "ad": "muscab mascud",
+                "tarih": "2025-05-22",
+                "kategori": "diger",
+                "icerik": "deneme123"
+            }
+        ]
+    }
+]

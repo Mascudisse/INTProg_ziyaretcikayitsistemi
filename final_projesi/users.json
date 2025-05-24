@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "farhiya",
+        "email": "farhiya@gmail.com",
+        "password": "pbkdf2:sha256:600000$jBM9bAi8VUpda9rW$46a02fc981b924dd27f83ea1dcff626458640eca3fd6dbc2fff69d651ed2c0e8"
+    },
+    {
+        "id": 2,
+        "name": "Mascud",
+        "email": "mascuud@gmail.com",
+        "password": "pbkdf2:sha256:600000$EB6umIFITspGf2VL$c74716af3359f524e518bfcac867b0bad5d8a3953747aaaea6608dbd784ab4c5"
+    },
+    {
+        "id": 3,
+        "name": "nuradin",
+        "email": "nuradin@gmail.com",
+        "password": "pbkdf2:sha256:600000$uUt6bfJ9D4gT1lLR$b83c792e923171636f6f83acb7dc4a2566f12a851be4847046a798a3b3ab3efe"
+    },
+    {
+        "id": 4,
+        "name": "obay",
+        "email": "obay@gmail.com",
+        "password": "pbkdf2:sha256:600000$wpICWlO0NNWhI7Sk$34adc5c6d4d45188f8534a1f4317290449cd1b5a7f370faaeb4cd3f66046e6e1"
+    },
+    {
+        "id": 5,
+        "name": "geelle",
+        "email": "geelle@gmail.com",
+        "password": "pbkdf2:sha256:600000$cM0YzF2IAcFkbbxZ$26bc07acc41c2c833f78f4f4aba2947d6d9ba43dc7b8b99c5b14a37abbb3e7ea"
+    },
+    {
+        "id": 6,
+        "name": "musab",
+        "email": "musab@gmail.com",
+        "password": "pbkdf2:sha256:600000$XgSihWqH6hu1xrfM$2e142d7a26fc03741450630c4399ed93e7c9f48be147a38744a33f803c575f07"
+    }
+]
